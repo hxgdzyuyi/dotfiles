@@ -1,0 +1,5 @@
+--type-add
+css=.css,.scss,.styl
+
+--ignore-dir=node_modules
+--ignore-dir=.statictmp

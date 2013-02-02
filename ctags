@@ -1,0 +1,5 @@
+--langdef=mako
+--langmap=mako:.html
+--regex-mako=/def[ \t]name=['"](.*)['"]/\1/f,function/
+--regex-mako=/article/\0/f,function/
+--regex-mako=/aside/\0/f,function/

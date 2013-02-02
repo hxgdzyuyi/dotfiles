@@ -1,0 +1,28 @@
+[alias]
+  st = status -bs
+  dc = diff --cached
+  ca = commit -av
+  amend = commit --amend -C HEAD
+  rv = checkout HEAD --force --
+  ff = merge --ff-only
+  graf = log --graph --oneline --decorate
+  nb = checkout --track HEAD -b
+  tip = log -1 --stat
+  sw = checkout
+  co = checkout
+  rh = reset --hard
+  ph = push origin HEAD
+
+[color]
+  diff = auto
+  status = auto
+	ui = auto
+
+[core]
+  pager = less -+FSRX -FRX
+
+[user]
+  name =  yangqing
+  email = yangqing@douban.com
+[credential]
+	helper = cache --timeout=3600
