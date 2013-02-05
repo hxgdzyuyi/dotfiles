@@ -142,3 +142,4 @@ alias f=my_everyday_find
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias fq='ssh -qTfnN -D 6300 linode'
+alias sb='sensible-browser $1'
