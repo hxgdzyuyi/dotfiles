@@ -139,3 +139,6 @@ function my_everyday_find() {
 unset _exclude_matches _excludes _match
 alias f=my_everyday_find
 # blog post: http://titusd.co.uk/2012/12/23/my-everyday-find-command/
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+alias fq='ssh -qTfnN -D 6300 linode'
