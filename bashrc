@@ -96,6 +96,7 @@ alias q="exit"
 alias -- -="cd -"
 alias ack="ack-grep $1"
 alias g="git $1"
+source /etc/bash_completion.d/git
 __git_complete g __git_main
 alias m="make $1"
 complete -F _make m
