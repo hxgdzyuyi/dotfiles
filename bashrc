@@ -144,3 +144,11 @@ alias f=my_everyday_find
 
 alias fq='ssh -qTfnN -D 6300 linode'
 alias sb='sensible-browser $1'
+
+function v {
+  vagrant ssh 2>/dev/null
+  if [ $? != 0 ]
+  then
+    vagrant up --no-provision && vagrant ssh
+  fi
+}
