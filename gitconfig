@@ -20,9 +20,14 @@
 
 [core]
   pager = less -+FSRX -FRX
+	autocrlf = false
+	filemode = false
+	deltaBaseCacheLimit = 1G
 
 [user]
-  name =  yangqing
-  email = yangqing@douban.com
+	name = hxgdzyuyi
+	email = hxgdzyuyi@gmail.com
 [credential]
 	helper = cache --timeout=3600
+[push]
+	default = matching
