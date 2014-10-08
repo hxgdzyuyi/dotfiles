@@ -140,7 +140,7 @@ function my_everyday_find() {
 unset _exclude_matches _excludes _match
 alias f=my_everyday_find
 # blog post: http://titusd.co.uk/2012/12/23/my-everyday-find-command/
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/share/npm/bin:/usr/local/share/npm/bin/
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/share/npm/bin:/usr/local/share/npm/bin/:/usr/local/Cellar/qt5/5.3.1/bin/
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 alias fq='ssh -qTfnN -D 6300 linode'
@@ -156,4 +156,4 @@ function v {
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$HOME/.cabal/bin:$PATH
-export PATH="$PATH":`pwd`/depot_tools
+export PATH="$PATH":~/project/depot_tools

@@ -2,6 +2,7 @@
   st = status -bs
   dc = diff --cached
   ca = commit -av
+  br = branch
   amend = commit --amend -C HEAD
   rv = checkout HEAD --force --
   ff = merge --ff-only
