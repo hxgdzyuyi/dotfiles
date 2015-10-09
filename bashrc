@@ -157,3 +157,8 @@ export GOPATH=~/gocode
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 alias qshell='~/gocode/bin/qshell'
+
+
+if [ "$(uname)" = 'Darwin' ]; then
+  [[ -s "/usr/local/bin/gsed" ]] && alias sed="gsed"
+fi
