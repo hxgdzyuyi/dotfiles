@@ -96,8 +96,6 @@ alias q="exit"
 alias -- -="cd -"
 alias ack="ack-grep $1"
 alias g="git $1"
-source /etc/bash_completion.d/git
-__git_complete g __git_main
 alias m="make $1"
 complete -F _make m
 
@@ -116,8 +114,6 @@ do
   done
   $CD_ALIAS_NAME="${CD_ALIAS_VALUE}"
 done
-
-. /usr/share/autojump/autojump.sh
 
 # f - everyday find
 # usage:
@@ -140,11 +136,11 @@ function my_everyday_find() {
 unset _exclude_matches _excludes _match
 alias f=my_everyday_find
 # blog post: http://titusd.co.uk/2012/12/23/my-everyday-find-command/
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/share/npm/bin:/usr/local/share/npm/bin/:/usr/local/Cellar/qt5/5.3.1/bin/
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/share/npm/bin:/usr/local/share/npm/bin/:/usr/local/Cellar/qt5/5.3.1/bin/
 
 alias fq='ssh -qTfnN -D 6300 linode'
 alias sb='sensible-browser $1'
+alias komic-cli-dev='BUNDLE_GEMFILE=/Users/yangqing/mine-work/komic-cli/Gemfile bundle exec /Users/yangqing/mine-work/komic-cli/bin/komic $1'
 
 function v {
   vagrant ssh 2>/dev/null
@@ -157,3 +153,7 @@ function v {
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$HOME/.cabal/bin:$PATH
 export PATH="$PATH":~/project/depot_tools
+export GOPATH=~/gocode
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+alias qshell='~/gocode/bin/qshell'
