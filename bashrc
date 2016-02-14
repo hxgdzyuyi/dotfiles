@@ -97,6 +97,7 @@ alias -- -="cd -"
 alias ack="ack-grep $1"
 alias g="git $1"
 alias m="make $1"
+alias tree="tree --dirsfirst"
 complete -F _make m
 
 
@@ -154,11 +155,16 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$HOME/.cabal/bin:$PATH
 export PATH="$PATH":~/project/depot_tools
 export GOPATH=~/gocode
+export FMPP_HOME=/opt/fmpp
+export JAVA_HOME=/Library/Java/Home
+PATH=$PATH:$JAVA_HOME/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 alias qshell='~/gocode/bin/qshell'
 
 
-if [ "$(uname)" = 'Darwin' ]; then
-  [[ -s "/usr/local/bin/gsed" ]] && alias sed="gsed"
-fi
+export NODE_PATH=/usr/local/lib/node_modules
+
+alias japp='cd ~/17173/trade-git/webapp'
+alias jmock='cd /Users/yangqing/17173/trade-git/webapp/mock/front'
+alias jjs='cd /Users/yangqing/17173/trade-git/webapp/src/app'
