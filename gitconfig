@@ -1,9 +1,11 @@
 [alias]
   st = status -bs
   dc = diff --cached
+  cam = commit -ave -F /Users/qingyang/.commit-for-git
   ca = commit -av
   br = branch
   amend = commit --amend -C HEAD
+  reword = commit --amend
   rv = checkout HEAD --force --
   ff = merge --ff-only
   graf = log --graph --oneline --decorate
@@ -13,6 +15,8 @@
   co = checkout
   rh = reset --hard
   ph = push origin HEAD
+  svr = svn rebase
+  svd = svn dcommit
 
 [color]
   diff = auto
