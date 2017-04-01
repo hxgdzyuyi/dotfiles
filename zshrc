@@ -107,10 +107,6 @@ alias g="git $1"
 alias m="make $1"
 alias tree="tree --dirsfirst"
 
-alias japp='cd ~/17173/trade-git/webapp'
-alias jmock='cd /Users/yangqing/17173/trade-git/webapp/mock/front'
-alias jjs='cd /Users/yangqing/17173/trade-git/webapp/src/app'
-
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 function gitconfig_17173 {
