@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rvm)
+plugins=(git rvm autojump)
 
 # User configuration
 
@@ -107,8 +107,6 @@ alias ack="ack-grep $1"
 alias g="git $1"
 alias m="make $1"
 alias tree="tree --dirsfirst"
-
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 function gitconfig_17173 {
   git config user.name "杨青"
