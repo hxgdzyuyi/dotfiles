@@ -21,18 +21,18 @@
 [color]
   diff = auto
   status = auto
-	ui = auto
+  ui = auto
 
 [core]
   pager = less -+FSRX -FRX
-	autocrlf = false
-	filemode = false
-	deltaBaseCacheLimit = 1G
+  autocrlf = false
+  filemode = false
+  deltaBaseCacheLimit = 1G
 
 [user]
-	name = hxgdzyuyi
-	email = hxgdzyuyi@gmail.com
+  name = hxgdzyuyi
+  email = hxgdzyuyi@gmail.com
 [credential]
-	helper = cache --timeout=3600
+  helper = cache --timeout=3600
 [push]
-	default = matching
+  default = matching
