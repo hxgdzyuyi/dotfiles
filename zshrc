@@ -59,6 +59,7 @@ export PATH=$PATH:"/usr/local/share/npm/bin/"
 
 source $ZSH/oh-my-zsh.sh
 
+PROMPT='${ret_status} %{$fg[cyan]%}%3~%{$reset_color%} $(git_prompt_info)'
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
