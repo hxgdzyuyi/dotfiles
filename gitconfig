@@ -28,6 +28,8 @@
   autocrlf = false
   filemode = false
   deltaBaseCacheLimit = 1G
+  ignorecase = false
+  quotepath = false
 
 [user]
   name = hxgdzyuyi
